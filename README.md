@@ -1,6 +1,6 @@
 # Ballance - Modern Setup and configuration (including Steam Deck)
 
-The Steam release of Ballance is pretty vanilla and in-line with the original release, though for modern audiences who are used to QOL features which have become standard since the release of the game, it requires a bit of tinkering. This guide will hopefully help you get the game up and running both on your PC and your Steam Deck and will cover widescreen resolutions, unlocked framerates and mods.
+The Steam release of Ballance is pretty vanilla and in-line with the original release, though for modern audiences who are used to QOL features which have become standard since the release of the game, it requires a bit of tinkering. This guide will hopefully help you get the game up and running both on your PC and your Steam Deck and will cover widescreen resolutions, unlocked framerates, the Level 13 pack and custom maps.
 
 ## BallancePlayer (NewPlayerPatch)
 
@@ -9,7 +9,7 @@ First order of business is using the new [BallancePlayer](https://github.com/doy
 First acquire a compiled release using [this MEGA link](https://mega.nz/folder/CV5SyapR#LbduTW51xmkDO4EDxMfH9w/folder/2ZxXSaDB) and download `NewPlayerPatch-v0.3.0.zip`.
 Then, proceed with extracting the contents of the zip into your game installation folder as shown in the image. Make sure to extract the archive in the base game directory so all of the `Bin` contents are unzipped in the same folder! You will be prompted to overwrite `Player.exe` - confirm overwriting the file.
 
-`Player.ini` is BallancePlayer's configuration file, and we have quite a bit to play around with here. The main order of business is setting `Width`, `Height`, `UnlockWidescreen`, `Fullscreen` and `SkipOpening`. [Here]() I am providing a sample configuration which I personally use on my Steam Deck and for any Deck users should just be copied and with any further tinkering done to taste afterwards.
+`Player.ini` is BallancePlayer's configuration file, and we have quite a bit to play around with here. The main order of business is setting `Width`, `Height`, `UnlockWidescreen`, `Fullscreen` and `SkipOpening`. [Here](https://raw.githubusercontent.com/nikolamihaylov-hellio/ballance-guide/main/Player.ini) I am providing a sample configuration which I personally use on my Steam Deck and for any Deck users should just be copied and with any further tinkering done to taste afterwards.
 
 ## Framerate unlocking
 By default, Ballance's internal game speed is tied to the framerate, meaning if you increase the framerate limit using the configuration file, the game becomes much faster (and unplayable). BallanceModLoader alleviates this issue. Thankfully that's just a drag and drop process, including on Linux (no need for launch parameters!).
@@ -22,7 +22,7 @@ You will immediately be able to tell if you've installed it correctly when you l
 With BallanceModLoader installed, we're now able to play custom maps through the main menu. Clicking on Start reveals the base game level list, as well as a right arrow off to the side. Custom maps are read from the `Ballance/ModLoader/Maps/` directory. Copy any `.NMO` map files in that directory and upon reboot, you will see them in the side menu of the game.
 
 ## Level 13 - The Twilight Zone
-
+An extra free level released by the original development team which is sadly not included with the Steam release. With BallanceModLoader we can install the level pack, however. Download the Zip for [here](https://mega.nz/folder/CV5SyapR#LbduTW51xmkDO4EDxMfH9w/folder/2ZxXSaDB) and extract the 3D Entities folder in the game directory. Next time you start up the game, "The Twilight Zone" should appear in the level select screen at the very bottom.
 
 ## Steam Deck input layout
 While the official layout for the game will work just fine, I made my own one which binds the camera toggles to both shoulder buttons (left and right respectively), as well as changing some of the face button bindings. As Steam unfortunately doesn't have a good way of sharing Steam Input layouts via URLs that you can save, I recommend looking up "Ballance - Better Deck Layout" in the Steam Input community layouts section. I encourage you to try it out and change anything to your own taste!
